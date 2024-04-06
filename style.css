@@ -1,0 +1,604 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-nav{
+    width:100%;
+    height:80px;
+    background-color: black;
+    position: relative;
+    text-align: right;
+    display:flex;
+    align-items:center;
+    justify-content: flex-end;
+}
+
+#logo{
+     position: absolute;
+     position: absolute;
+     top: 20px;
+     left: 30px;
+}
+
+#logo-text{
+    color:black;
+    display: inline;
+    position: absolute;
+    text-align: left;
+    top: 20px;
+    left:120px;
+    color:white;
+    font-family: Montserrat, sans-serif;
+    font-weight:bold;
+    font-size: 12px;
+
+}
+
+
+.main-nav a{
+    color:#e2bd00;
+    font-family: Montserrat, sans-serif;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight:bolder;
+    margin-right:50px;
+    transition:.3s;
+}
+
+.main-nav a:hover{
+    color:white;
+}
+
+.main-nav :last-child{
+    background-color: #e2bd00;
+    color:white;
+    padding:5px;
+    transition: .3s;
+}
+
+.main-nav :last-child:hover{
+background-color: white;
+color:#e2bd00;
+}
+
+.banner{
+    display:flex;
+    justify-content: flex-end;
+    background-color: black;
+}
+
+.banner-pattern{
+    display: none;
+}
+
+.banner-text{
+    color:white;
+    font-family: Montserrat, sans-serif;
+    font-size:38px;
+    margin-left:50px;
+    margin-top:100px;
+    
+}
+
+.banner-text-container{
+display: flex;
+flex-direction: column;
+
+}
+
+.banner-img{
+    width:75%;
+    align-self: flex-end;
+}
+
+.small-banner-text{
+    color:white;
+    font-family: Montserrat, sans-serif;
+    font-size:14px; 
+    height:100px;
+    width:60%;
+    margin-left:50px;
+    margin-top:20px;
+}
+
+
+
+.outline-button{
+    width:35%;
+    color:white;
+    background-color: black;
+    font-family: Montserrat, sans-serif;
+    border: 3px solid #e2bd00;
+    padding: 10px;
+    font-size:16px;
+    font-weight: 900;
+    margin-left:60px;
+    margin-bottom:60px;
+    transition:.3s;
+}
+
+.outline-button:hover{
+    color:#e2bd00;
+    background-color: white;
+
+}
+
+.goldColloredWords{
+    color: #e2bd00;
+    font-weight:bolder;
+}
+
+/* ================================================= MAIN SECTION ================================================= */
+
+/* ================================================= SERVICES SECTION ================================================= */
+
+.services-section{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width:100%;
+    grid-gap:0;
+}
+
+.services-section div{
+    width:100%;
+    background:black;
+    transition:.3s;
+}
+
+.services-section div:hover{
+    transform: scale(1.1);
+}
+
+.services-section div img{
+    width:100%;
+    transition:.3s;
+}
+
+.services-section-header{
+    padding:30px;
+    font-weight: 900;
+    font-size:16px;
+    text-align: center;
+}
+
+.goldenBulletList{
+    color:white;
+    padding:30px;
+    padding-top:0px;
+    font-size:14px;
+    font-weight: 400;
+    list-style: none;
+}
+
+li::before {
+    content: '';
+    background:#e2bd00;
+    display: inline-block;
+    width: .5em;
+    height:.5em;
+    border-radius: 100%;
+    margin-right: 15px;
+  }
+
+.services-section ul li{
+    padding: 10px;
+}
+
+
+
+
+/* ================================================= PURPOSE SECTION ================================================= */
+
+.section-purpose{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+.section-purpose-left{
+    background:#eee;
+}
+
+.section-purpose-left p{
+    font-size: 18px;
+    padding:50px;
+
+}
+
+.filled-button{
+    width:35%;
+    color:white;
+    background-color: black;
+    font-family: Montserrat, sans-serif;
+    padding: 10px;
+    font-size:18px;
+    font-weight: bolder;
+    margin-left:60px;
+    margin-bottom:60px;
+    transition:.3s;
+}
+
+
+.filled-button:hover{
+    color:black;
+    background-color: white;
+
+}
+
+.section-purpose-right{
+    background:black;
+}
+
+.section-purpose-header{
+    color:white;
+    margin-top: 30px;
+    margin-left:50px;
+
+}
+
+.section-purpose-right ul{
+    padding: 50px;
+    font-weight: 400;
+}
+
+.section-purpose-right ul li{
+    padding: 10px;
+}
+
+
+
+
+/* ================================================= WHO ARE WE? SECTION ================================================= */
+
+.section-who .container{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    width:100%;
+}
+
+.section-who h2{
+    text-align:center;
+    margin-top:30px; 
+    font-weight: bolder;
+}
+
+.section-who img{
+    width: 85%;
+    border: 15px solid #e2bd00;
+    padding:15px;
+    transition: .3s;
+}
+
+.section-who img:hover{
+    transform: scale(1.1);
+}
+
+.section-who .container div{
+    padding: 30px;
+}
+
+.section-who h3{
+    text-align: center;
+    margin:20px 0;
+}
+
+.section-who p{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.section-who input{
+    display: block; 
+    margin: 0 auto; 
+    border: 3px solid black;
+}
+
+
+/* ================================================= CAREERS SECTION ================================================= */
+.careers-section {
+    background: #eee;
+    padding: 50px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.careers-section h2 {
+    color: #000;
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+
+.careers-section p, .careers-section a {
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.careers-section ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.careers-section li::before {
+    content: '';
+    background: #e2bd00;
+    display: inline-block;
+    width: .5em;
+    height: .5em;
+    border-radius: 100%;
+    margin-right: 15px;
+}
+
+.careers-section ul li {
+    padding: 10px 0;
+    color: #000;
+    font-size: 16px;
+}
+
+.careers-section a:hover {
+    color: #e2bd00;
+    text-decoration: none;
+}
+
+
+
+
+
+/* ================================================= FOOTER ================================================= */
+
+footer{
+    background:black;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr, 2fr, 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+    grid-template-areas: 
+    "l n n n ."
+    "l c c c s";
+}
+
+footer p{
+    color:white;
+}
+
+
+.footer-nav-container{
+    grid-area: n;
+}
+
+.logo-container{
+    grid-area: l;
+}
+
+.contact-info-container{
+    grid-area: c;
+}
+
+
+.social-links-container{
+    grid-area: s;
+    display: grid;
+}
+
+
+footer a{
+    font-size: 12px;
+    color:white;
+    text-decoration:none;
+    font-weight: 400;
+    transition:.3s;
+}
+
+footer a:hover{
+    color:#e2bd00;
+}
+
+
+.line{
+    color:white;
+    margin-left:20px;
+    margin-right:20px;
+}
+
+#footer-logo-text{
+    color:white;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+
+
+/* ================================================= MEDIA QUERIES ================================================= */
+
+
+@media screen and (min-width: 1200px){
+    .banner-img{
+        width:35%
+    }
+
+    .banner-text{
+        font-size:48px;
+    }
+
+    .small-banner-text{
+        font-size: 16px;
+    }
+
+    #logo-text{
+        font-size: larger;
+    }
+
+    footer a:first-child{
+        margin-left:33%;
+    }
+
+}
+
+
+@media screen and (max-width: 1063px) {
+
+    .banner-img{
+        width:50%;
+        align-self: center;
+    }
+
+    .banner-text{
+        font-size:25px;
+    }
+
+    .outline-button{
+        font-size: 12px;
+    }
+    
+    .small-banner-text {
+        font-size: 15px; 
+        width: 70%; 
+        margin-top: 10px; 
+    }
+
+    .services-section ul{
+        font-size:12px;
+    }
+
+}
+
+
+@media screen and (max-width: 850px) {
+    .banner-img{
+        width:50%;
+        align-self: center;
+    }
+
+    .main-nav a{
+        font-size:10px;
+    }
+
+    .banner-text{
+        font-size:28px;
+        margin-top: 50px;
+    }
+
+    .small-banner-text{
+        margin:20px 50px;
+    }
+
+    .outline-button{
+        margin-bottom: 30px;
+    }
+
+    .small-banner-text {
+        font-size: 13px; 
+        width: 80%; 
+        margin-left: 50px; 
+        margin-top: 5px; 
+    }
+
+    .services-section{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section-purpose-right ul{
+        font-size: 14px;
+    }
+
+    .filled-button{
+        font-size:16px;
+    }
+
+    .section-who p{
+        font-size: 14px;
+    }
+ 
+
+
+@media screen and (max-width: 700px) {
+    .banner{
+        align-items: flex-start;
+    }
+
+    .banner-img{
+        display:none;
+    }
+
+    .banner-text{
+        font-size:26px;
+    }
+
+    .small-banner-text {
+        font-size: 15px; 
+        width: 90%; 
+      }
+
+    .main-nav a{
+        display: none;
+    }
+
+    .banner-pattern{
+        display: inline;
+        align-self: flex-start;
+        margin-right: 0px;
+    }
+
+    .outline-button {
+        width: 60%; 
+        font-size: 14px; 
+        margin-left: 20px; 
+        margin-bottom: 20px; 
+    }
+
+    .section-purpose{
+        grid-template-columns: 1fr, 1fr, 1fr;
+    }
+
+    
+    .section-who .container{
+        grid-template-columns:1fr;
+        text-align: center;
+        font-size:16px;
+    }
+      
+}
+
+@media only screen and (max-width: 480px) {
+
+    .banner-text{
+        font-size:32px;
+    }
+    .small-banner-text {
+        font-size: 15px; 
+        width: 100%; 
+        margin-top: 20px; 
+        text-align: center; 
+        margin-left: 0px;
+      }
+
+    .outline-button {
+      width: 80%; 
+      font-size: 14px; 
+      margin-left: 30px; 
+      margin-bottom: 30px; 
+      font-weight: 900;
+    }
+    .services-section{
+        grid-template-columns: 1fr;
+    }
+
+    .filled-button{
+        width:50%;
+        margin:15px 25%;
+    }
+    
+  }
+}
