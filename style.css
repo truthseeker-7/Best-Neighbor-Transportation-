@@ -447,10 +447,11 @@ footer a:hover{
 }
 
 
-@media screen and (max-width: 1063px) {
+
+@media screen and (max-width: 1200px) {
 
     .banner-img{
-        width:50%;
+        width:40%;
         align-self: center;
     }
 
@@ -472,6 +473,13 @@ footer a:hover{
         font-size:12px;
     }
 
+}
+
+
+@media screen and (max-width: 1200px) {
+    .main-nav a{
+        font-size: 10px;
+    }
 }
 
 
