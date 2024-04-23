@@ -577,6 +577,7 @@ li::before {
 
     .outline-button{
         margin-bottom: 30px;
+        width: fit-content;
     }
 
     .small-banner-text {
