@@ -445,99 +445,56 @@ li::before {
 
 /* ================================================= FOOTER ================================================= */
 .footer {
-  background-color: #000;
-  color: #fff;
-  padding: 3rem 2rem;
-  position: relative;
-  margin-top: auto;
+    background-color: #000;
+    color: #fff;
+    padding: 3rem 2rem;
+    position: relative;
+    margin-top: auto;
 }
-.footer ul li {
-    padding-left: 1em; /* Adjust padding-left as needed */
-  }
 
 .container {
-  margin: auto;
-  max-width: 90rem;
-  display: grid;
-  grid-template-columns: 1fr;
-
-  @media (min-width: 768px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media (min-width: 1024px) {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  gap: 2rem;
+    display: grid;
+    gap: 2rem;
+    margin: 0 auto;
+    max-width: 90rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-.section {
-  h3 {
+.section h3 {
     font-size: 1.125rem;
     font-weight: bold;
     margin-bottom: 0.75rem;
-  }
+}
 
-  p,
-  ul {
+.section p, .section ul {
     font-size: 0.875rem;
-  }
+}
 
-  ul {
+.section ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-  }
+}
 
-  ul li {
+.section ul li {
     margin-bottom: 0.5rem;
-  }
+}
 
-  a {
+.section a {
     color: #fff;
     text-decoration: none;
     transition: color 0.3s ease;
-  }
+}
 
-  a:hover {
+.section a:hover {
     color: #69a3f0;
-  }
-}
-
-.section.contact-us h1 {
-  font-size: 1.5rem; /* Increase heading size for Contact Us section */
-}
-
-.section.contact-us ul li h2,
-.section.contact-us ul li h3 {
-  margin: 0; /* Remove default margin for phone number and email */
-  font-size: inherit; /* Inherit font size from parent element */
-}
-
-.phone-number {
-  display: inline-block; /* Allow inline styling for phone number */
-}
-
-.social-icons {
-  display: flex;
-  margin-top: 10px;
-}
-
-.social-icons a {
-  margin-right: 10px;
-  color: #fff;
-}
-
-.social-icons i {
-  font-size: 2rem; /* Font size for social media icons */
 }
 
 .bottom-section {
-  text-align: center;
-  margin-top: 1.5rem;
-  border-top: 1px solid #444;
-  padding-top: 1.5rem;
+    text-align: center;
+    margin-top: 1.5rem;
+    border-top: 1px solid #444;
+    padding-top: 1.5rem;
 }
 /* ================================================= MEDIA QUERIES ================================================= */
 
